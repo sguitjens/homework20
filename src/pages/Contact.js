@@ -1,30 +1,38 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "../components/Grid";
-import API from "../utils/API";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Input, TextArea, FormButton } from "../components/Form";
 
 function Contact() {
-  const [formObject, clearFormObject] = useState({
+  const [formObject, setFormObject] = useState({
     fullName: "",
     email: "",
     message: ""
   })
-}
 
-function handleFormSubmit(event) {
+const handleInputChange = event => {
+  // Getting the value and name of the input which triggered the change
+  const { name, value } = event.target;
+  setFormObject({
+    ...formObject,
+    [name]: value
+  })
+};
+
+const handleFormSubmit = event => {
   event.preventDefault();
-  // clear the form fields
-  API.saveInfo({
-    fullName: formObject.fullName,
-    email: formObject.fullName,
-    synopsis: formObject.fullName
-  })
-  .then(() => {
+  // API.saveInfo({
+  //   fullName: formObject.fullName,
+  //   email: formObject.fullName,
+  //   synopsis: formObject.fullName
+  // })
+  // .then(() => {
     
-  })
-  clearFormObject()
+  // })
+  // clear the form fields
+  console.log("form object", formObject);
+  // setFormObject();
   // eventually we want to send this to a database
 }
 
@@ -33,23 +41,23 @@ return (
     <Header>
     </Header>
     <Row size="mt-4">
-      <Col size="col-md-8 offset-md">
+      <Col size="md-8 offset-md">
         <div class="col-md-12 about">Contact</div>
       </Col>
-      <Col>
+      <Col size="md-4">
       <form>
           <Input
-            // onChange={handleInputChange}
+            onChange={handleInputChange}
             name="fullName"
             placeholder="John Doe"
           />
           <Input
-            // onChange={handleInputChange}
+            onChange={handleInputChange}
             name="email"
             placeholder="example@gmail.com"
           />
           <TextArea
-            // onChange={handleInputChange}
+            onChange={handleInputChange}
             name="message"
             placeholder="Write your message here."
           />
@@ -64,4 +72,6 @@ return (
     </Row>
     <Footer />
   </Container>
-)
+)}
+
+export default Contact;

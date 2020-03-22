@@ -14,15 +14,9 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route>
-            <Contact />
-          </Route>
-          <Route>
-            <Portfolio />
-          </Route>
-          <Route>
-            <Profile />
-          </Route>
+          <Route exact path="/" component={Contact} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
       </div>
     </Router>
