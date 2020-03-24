@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Container, Col, Row } from "../components/Grid";
+import ContactForm from "../components/ContactForm";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Input, TextArea, FormButton } from "../components/Form";
 
 function Contact() {
   const [formObject, setFormObject] = useState({
@@ -37,41 +36,25 @@ const handleFormSubmit = event => {
 }
 
 return (
-  <Container fluid>
+  <div>
     <Header>
     </Header>
-    <Row size="mt-4">
-      <Col size="md-8 offset-md">
-        <div class="col-md-12 about">Contact</div>
-      </Col>
-      <Col size="md-4">
-      <form>
-          <Input
-            onChange={handleInputChange}
-            name="fullName"
-            placeholder="John Doe"
-          />
-          <Input
-            onChange={handleInputChange}
-            name="email"
-            placeholder="example@gmail.com"
-          />
-          <TextArea
-            onChange={handleInputChange}
-            name="message"
-            placeholder="Write your message here."
-          />
-          <FormButton
-            // disabled={!(formObject.fullName && formObject.email)}
-            onClick={handleFormSubmit}
-          >
-            Submit Book
-          </FormButton>
-        </form>
-      </Col>
-    </Row>
+    {/* <Content> */}
+    <div className="container-fluid">
+    <div className="row mt-4">
+
+      <div className="col-md-8 offset-md-1 mid-body">
+        <div className="col-md-12 textmargins">
+        <ContactForm>
+        </ContactForm>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    {/* </Content> */}
     <Footer />
-  </Container>
+  </div>
 )}
 
 export default Contact;

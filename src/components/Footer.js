@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
-      this is the footer
+    <div divStyle={"height: 100px"} className="bg-dark h2">
+      Hi
     </div>
   );
 }
