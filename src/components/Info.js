@@ -29,9 +29,9 @@ function Info(props) {
           {/* <strong>Contact me or see more:</strong><br> */}
           {/* <i className="fas fa-mobile"></i> 503-123-4567 <br> */}
           {/* <i className="fas fa-envelope-square"></i> sguitjens@gmail.com <br> */}
-          {/* <a href="https://www.linkedin.com/in/sydneyguitjens/" alt="LinkedIn" target="_blank"  rel="noopener"><i className="fab fa-linkedin"/></i> LinkedIn</a> <br> */}
+          {/* <a href="https://www.linkedin.com/in/sydneyguitjens/" alt="LinkedIn" target="_blank"  rel="noopener noreferrer"><i className="fab fa-linkedin"/></i> LinkedIn</a> <br> */}
           {/* <a href="https://github.com/sguitjens" alt="github" target="_blank"><i className="fab fa-github-alt"></i> GitHub</a><br> */}
-          <a href="/pdf/Guitjens_Sydney_Resume.pdf" alt="Resume PDF" target="_blank" rel="noopener"><i className="fas fa-file-pdf"></i> Resume PDF</a>
+          <a href="/pdf/Guitjens_Sydney_Resume.pdf" alt="Resume PDF" target="_blank" rel="noopener noreferrer"><i className="fas fa-file-pdf"></i> Resume PDF</a>
         </p>
       </div>
     </div>
