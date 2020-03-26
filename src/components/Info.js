@@ -17,7 +17,7 @@ function Info(props) {
 
       {/* <div className="row"> */}
         <div>
-          <div className="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+          <div className="col-12 p-0 mb-2">
             <img src="/images/headshot.jpg" alt="Sydney Guitjens"/>
           </div>
         
