@@ -9,13 +9,13 @@ return (
   <div>
     <Header>
     </Header>
-      <div class="container-fluid">
-      <div class="row mt-4">
+      <div className="container-fluid">
+      <div className="row mt-4">
         <Info>
         </Info>
       </div>
       </div>
-    <Footer />
+      <Footer></Footer>
   </div>
 )}
 

@@ -4,35 +4,26 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Contact() {
+  // eslint-disable-next-line
   const [formObject, setFormObject] = useState({
     fullName: "",
     email: "",
     message: ""
   })
 
-const handleInputChange = event => {
-  // Getting the value and name of the input which triggered the change
-  const { name, value } = event.target;
-  setFormObject({
-    ...formObject,
-    [name]: value
-  })
-};
+// const handleInputChange = event => {
+//   // Getting the value and name of the input which triggered the change
+//   const { name, value } = event.target;
+//   setFormObject({
+//     ...formObject,
+//     [name]: value
+//   })
+// };
 
+// eslint-disable-next-line
 const handleFormSubmit = event => {
   event.preventDefault();
-  // API.saveInfo({
-  //   fullName: formObject.fullName,
-  //   email: formObject.fullName,
-  //   synopsis: formObject.fullName
-  // })
-  // .then(() => {
-    
-  // })
-  // clear the form fields
   console.log("form object", formObject);
-  // setFormObject();
-  // eventually we want to send this to a database
 }
 
 return (
@@ -41,19 +32,17 @@ return (
     </Header>
     {/* <Content> */}
     <div className="container-fluid">
-    <div className="row mt-4">
-
-      <div className="col-md-8 offset-md-1 mid-body">
-        <div className="col-md-12 textmargins">
-        <ContactForm>
-        </ContactForm>
+      <div className="row mt-4">
+        <div className="col-md-8 offset-md-1">
+          <div className="col-md-12 textmargins">
+          <ContactForm>
+          </ContactForm>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-    {/* </Content> */}
-    <Footer />
+    <Footer></Footer>
   </div>
 )}
 

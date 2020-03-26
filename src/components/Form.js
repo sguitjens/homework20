@@ -20,8 +20,8 @@ export function TextArea(props) {
 
 export function FormButton(props) {
   return (
-    <button type="submit"  {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
-      Search
+    <button type="submit"  {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-secondary">
+      Submit
     </button>
   );
 }

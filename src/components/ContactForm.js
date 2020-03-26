@@ -4,9 +4,7 @@ import { Input, TextArea, FormButton } from "../components/Form";
 function Content(props) {
   return (
     <div>
-      <div className="col-md-12">
-        <div className="col-md-12 about">Contact</div>
-      </div>
+      <div className="col-md-12 about h3 p-0">Contact Me</div>
     <form>
       <Input
         onChange={props.handleInputChange}

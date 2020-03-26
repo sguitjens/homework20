@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Nav from "./components/Nav";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Profile from "./pages/Profile";
+ 
+
 
 // import logo from './logo.svg';
 // import './App.css';
